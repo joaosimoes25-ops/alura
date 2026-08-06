@@ -5,59 +5,51 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>blog</title>
- 
+<title>Document</title>
   <style>
-     header {
-         background-color: #008080;
-         color: #FFFFFF;
-         text-align: center;
-         max-width: 800px;
-         margin: 0 auto;
-         padding: 16px;
-         border: 5px solid #191970;
-    }
-   
-    main{
-     distlay: flex;
-background-color:#000000;
-color:#4FB4FF;
+header {
+background-color: #008080;
+color: #FFFFFF;
 text-align: center;
 max-width: 800px;
 margin: 0 auto;
 padding: 16px;
-border: 5px solid #1A0323;
+border: 5px solid #191970;
 }
-img {
-width: 450px;
-
-height: 300px;
+main {
+background-color: #000000;
+color: #4FB4FF;
+max-width: 800px;
+margin: 0 auto;
+padding: 16px;
+  display: flex;
 }
-</style>
+    img {
+width: 120px;
+height: 120px;
+}
+    .artigo-autor {
+font-weight: bold;
+}
+  </style>
  
 </head>
-<body>
- 
-  <header>
-<h1>Boas-vindas ao meu novo blog! sobre a comunidade de minicreft</h1>
-<p>Vou compartilhar fatos sobre comunidade de minicreft</p>
-  </header>
- <main>
-
-   <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDVwZno0ZWVqdG0zem1pNzU5Nml6MTh0djJxam5ibmF6bHJwcGk3dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6uqz4G16YT8u80b7aX/giphy.gif">
-    <div>
-
-  
-  <h2>Meu primeiro post</h2>
-  <p>Por:jonas</p>
-  <p>comunidade de minicreft</p>
+  <body>
+    <header>
+  <h1>Boas-vindas ao meu novo blog! sobre a comunidade de minicreft</h1>
+  <p1>Vou compartilhar fatos sobre comunidade de minicreft</p1>
+      </header>
+    <main>
+      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDVwZno0ZWVqdG0zem1pNzU5Nml6MTh0djJxam5ibmF6bHJwcGk3dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6uqz4G16YT8u80b7aX/giphy.gif">
+      <div>
+    <h2>Meu primeiro post</h2>
+    <p class="artigo-autor">Por: jonas </p>
+    <p>comunidade de minicreft</p>
        <button>❤️<span>0</span></button>
  <button>💩<span>0</span></button>
-   </div>
-  </main>
-   </body>
-
- 
+        </div>
+    </main>
+  </body>
  <script>
 const botao = document.querySelector("button");
 botao.addEventListener("click", botaoClicado);
@@ -78,7 +70,8 @@ let texto = botao.querySelector("span");
 texto.textContent++;
 }
 });
-  
-  
-</script>
+</html>
+  </script>
    </html>
+
+
