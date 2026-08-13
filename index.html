@@ -36,34 +36,38 @@ font-weight: bold;
 </head>
   <body>
     <header>
-  <h1>Boas-vindas ao meu novo blog! sobre a comunidade de minicreft</h1>
-  <p1>Vou compartilhar fatos sobre comunidade de minicreft</p1>
-      </header>
-    <main>
-      <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDVwZno0ZWVqdG0zem1pNzU5Nml6MTh0djJxam5ibmF6bHJwcGk3dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6uqz4G16YT8u80b7aX/giphy.gif">
-      <div>
-    <h2>Meu primeiro post</h2>
-    <p class="artigo-autor">Por: roberto</p>
-    <p>comunidade de minicreft</p>
-       <button>❤️<span>0</span></button>
- <button>💩<span>0</span></button>
-        </div>
-    </main>
-    </body>
- <script>
-const botoes document.querySelectorAll("button");
-botoes.forEach(function(botao) {
-botao.addEventListener("click", botaoClicado);
-function botaoClicado() {
-console.log;
-let texto = botao.querySelector("span");
-if (texto) {
-texto.textContent++;
-}
-});
+  <h1>Boas-vindas ao meu novo blog sobre a comunidade de Minecraft!</h1>
+    <p>Vou compartilhar fatos sobre a comunidade de Minecraft.</p>
+  </header>
 
-</html>
+  <main>
+    <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDVwZno0ZWVqdG0zem1pNzU5Nml6MTh0djJxam5ibmF6bHJwcGk3dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6uqz4G16YT8u80b7aX/giphy.gif" alt="GIF Minecraft">
+    
+    <div>
+      <h2>Meu primeiro post</h2>
+      <p class="artigo-autor">Por: Roberto</p>
+      <p>Comunidade de Minecraft</p>
+      
+      <button>❤️ <span>0</span></button>
+      <button>💩 <span>0</span></button>
+    </div>
+  </main>
+
+  <script>
+    const botoes = document.querySelectorAll("button");
+
+    botoes.forEach(function(botao) {
+      botao.addEventListener("click", botaoClicado);
+
+      function botaoClicado() {
+        console.log("Botão clicado!");
+        let texto = botao.querySelector("span");
+        if (texto) {
+          texto.textContent++;
+        }
+      }
+    });
   </script>
-   </html>
-
+</body>
+</html>
 
