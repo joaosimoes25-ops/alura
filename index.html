@@ -45,7 +45,7 @@ font-weight: bold;
     
     <div>
       <h2>Meu primeiro post</h2>
-      <p class="artigo-autor">Por: Roberto</p>
+      <p class="artigo-autor">Por: jonas</p>
       <p>Comunidade de Minecraft</p>
       
       <button>❤️ <span>0</span></button>
@@ -55,10 +55,8 @@ font-weight: bold;
 
   <script>
     const botoes = document.querySelectorAll("button");
-
     botoes.forEach(function(botao) {
       botao.addEventListener("click", botaoClicado);
-
       function botaoClicado() {
         console.log("Botão clicado!");
         let texto = botao.querySelector("span");
