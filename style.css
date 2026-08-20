@@ -1,12 +1,13 @@
 header {
-background-color: #008080;
-color: #FFFFFF;
-text-align: center;
-max-width: 800px;
-margin: 0 auto;
-padding: 16px;
-border: 5px solid #191970;
+  background-color: #008080;
+  color: #FFFFFF;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+  border: 5px solid #191970;
 }
+
 main {
   background-color: #000000;
   color: #4FB4FF;
@@ -14,13 +15,17 @@ main {
   margin: 0 auto;
   padding: 16px;
   display: flex;
-  flex-direction: column; /* Alinha os elementos verticalmente */
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-    
-width: 120px;
-height: 120px;
 
-    .artigo-autor {
-font-weight: bold;
+img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover; 
+}
+
+.artigo-autor {
+  font-weight: bold;
 }
