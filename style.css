@@ -39,3 +39,25 @@ article img {
 .artigo-autor {
   font-weight: bold;
 }
+
+/* ======================================================
+   REGRAS ADICIONADAS PARA O DARK MODE
+   ====================================================== */
+
+/* Altera o fundo da página inteira quando o modo escuro está ativo */
+body.dark-mode {
+  background-color: #121212;
+}
+
+/* Altera as cores do header no Dark Mode */
+body.dark-mode header {
+  background-color: #0d3b3b;
+  border-color: #000080;
+  color: #ffffff;
+}
+
+/* Altera as cores do main no Dark Mode */
+body.dark-mode main {
+  background-color: #1a1a1a;
+  color: #8ed0ff;
+}
