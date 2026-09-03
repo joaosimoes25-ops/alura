@@ -12,68 +12,60 @@
   <header>
     <h1>Boas-vindas ao meu novo blog sobre a comunidade de pokemon!</h1>
     <p>Vou compartilhar fatos sobre a comunidade de pokemon, curiosidades e atualizasão das novas gerações</p>
-    
+    <button id="botaoTema">🌙 Dark Mode</button>
   </header>
 
   <main>
-    
     <article>
       <img src="alanyadk-pokemon-1536855_1920.png" alt="Pokémon">
       <div>
-        
         <p>Franquia de pokemon</p>
         <p class="artigo-autor">Por: p.l</p>
         <h2>Meu primeiro post</h2>
-        <button>❤️ <span>0</span></button>
-        <button>💩 <span>0</span></button>
+        <button class="btn-reacao">❤️ <span>0</span></button>
+        <button class="btn-reacao">💩 <span>0</span></button>
       </div>
     </article>
 
-   
     <article>
       <img src="Game Boy Pokemon GIF.gif" alt="Game Boy Pokémon">
       <div>
         <h2> Pokémon Yellow</h2>
         <p class="artigo-autor">Lançado originalmente no Japão em 12 de setembro de 1998, Pokémon Yellow tem o diferencial de simular a historia de Ash Ketchum o protgonista do anime</p>
         <p>Primeiros jogos de pokemon</p>
-        <button>❤️ <span>0</span></button>
-        <button>💩 <span>0</span></button>
+        <button class="btn-reacao">❤️ <span>0</span></button>
+        <button class="btn-reacao">💩 <span>0</span></button>
       </div>
     </article>
   </main>
 
   <script>
-    const botoes = document.querySelectorAll("button");
-    botoes.forEach(function(botao) {
+    // Lógica para os botões de reação (incrementar contador)
+    const botoesReacao = document.querySelectorAll(".btn-reacao");
+    
+    botoesReacao.forEach(function(botao) {
       botao.addEventListener("click", function() {
         let texto = botao.querySelector("span");
         if (texto) {
-          texto.textContent++;
-          
-              DARK MODE / LIGHT MODE
-        ========================= */
-
-        const botaoTema = document.getElementById("botaoTema");
-
-        botaoTema.addEventListener("click", function() {
-
-            document.body.classList.toggle("dark-mode");
-
-            if (document.body.classList.contains("dark-mode")) {
-
-                botaoTema.textContent = "☀️ Light Mode";
-
-            } else {
-
-                botaoTema.textContent = "🌙 Dark Mode";
-
-            }
-
-        });
-
+          texto.textContent = Number(texto.textContent) + 1;
         }
       });
     });
+
+    // Lógica para alternar Dark / Light Mode
+    const botaoTema = document.getElementById("botaoTema");
+
+    if (botaoTema) {
+      botaoTema.addEventListener("click", function() {
+        document.body.classList.toggle("dark-mode");
+
+        if (document.body.classList.contains("dark-mode")) {
+          botaoTema.textContent = "☀️ Light Mode";
+        } else {
+          botaoTema.textContent = "🌙 Dark Mode";
+        }
+      });
+    }
   </script>
 </body>
 </html>
